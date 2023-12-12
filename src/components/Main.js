@@ -1,4 +1,8 @@
 function Main() {
-  return <h1>MAin</h1>;
+  return (
+    <main>
+      <h1>main</h1>
+    </main>
+  );
 }
 export default Main;
