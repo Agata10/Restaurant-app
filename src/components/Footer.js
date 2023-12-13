@@ -8,7 +8,7 @@ function Footer() {
         alt="restaurant"
       />
       <section>
-        <h6>Doormat Navigation</h6>
+        <h4 className="links-section-header">Doormat Navigation</h4>
         <ul>
           <li>
             <a href="/#">Home</a>
@@ -31,7 +31,7 @@ function Footer() {
         </ul>
       </section>
       <section>
-        <h6>Contact</h6>
+        <h4 className="links-section-header">Contact</h4>
         <ul>
           <li>
             <a href="/#">Adres</a>
@@ -45,7 +45,7 @@ function Footer() {
         </ul>
       </section>
       <section>
-        <h6>Social media links</h6>
+        <h4 className="links-section-header">Social media links</h4>
         <ul>
           <li>
             <a href="/#">Adres</a>

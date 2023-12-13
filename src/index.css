@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-green: #495E57;
+  --primary-yellow: #F4CE14;
+  --secondary-font-fam: Karla, sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -5,18 +13,71 @@ body {
 }
 
 #root {
+  padding: 25px 200px 70px 200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-rows: 120px 2fr 400px;
-  padding: 20px 60px;
+  justify-items: stretch;
 }
 
+/*HEADER*/
+
 header {
-  display: grid;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header ul {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   list-style: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--secondary-font-fam);
+  color: var(--primary-green);
+}
+
+a:visited {
+  color: var(--primary-yellow);
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  gap: 100px;
+  margin: 0 auto;
+
+  font-family: var(--secondary-font-fam);
+  color: var(--primary-green);
+  font-size: 16px;
+}
+
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+footer ul li {
+  line-height: 26px;
+}
+
+.links-section-header {
+  padding-bottom: 10px;
+  margin: 0;
+  font-weight: 800;
+}
+
+footer section {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
 }
