@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 230px;
+    height: 70px;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 767px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header ul {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    header ul li {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1064px) {
+
+    header ul li {
+        font-size: 1.2rem;
+    }
+
+    header ul {
+        gap: 10px;
+        margin: 0px;
+    }
+
+}

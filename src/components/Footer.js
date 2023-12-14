@@ -1,4 +1,5 @@
 import restaurant from '../images/restaurant.jpg';
+import '../styles/Footer.css';
 function Footer() {
   return (
     <footer>
