@@ -1,5 +1,7 @@
 import restaurant from '../images/restaurant.jpg';
 import '../styles/Footer.css';
+import Nav from './Nav';
+
 function Footer() {
   return (
     <footer>
@@ -10,26 +12,7 @@ function Footer() {
       />
       <section>
         <h4 className="links-section-header">Doormat Navigation</h4>
-        <ul>
-          <li>
-            <a href="/#">Home</a>
-          </li>
-          <li>
-            <a href="/#">About</a>
-          </li>
-          <li>
-            <a href="/#">Menu</a>
-          </li>
-          <li>
-            <a href="/#">Reservations</a>
-          </li>
-          <li>
-            <a href="/#">Order online</a>
-          </li>
-          <li>
-            <a href="/#">Login</a>
-          </li>
-        </ul>
+        <Nav />
       </section>
       <section>
         <h4 className="links-section-header">Contact</h4>
