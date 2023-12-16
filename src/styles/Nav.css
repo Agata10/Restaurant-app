@@ -2,6 +2,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 200px;
+    padding-left: 200px;
+
 }
 
 header img {
@@ -26,6 +29,8 @@ header ul li {
     header {
         flex-direction: column;
         justify-content: center;
+        padding-right: 1vw;
+        padding-left: 1vw;
     }
 
     header ul {
@@ -41,6 +46,11 @@ header ul li {
 
 
 @media only screen and (min-width: 768px) and (max-width: 1064px) {
+
+    header {
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+    }
 
     header ul li {
         font-size: 1.2rem;

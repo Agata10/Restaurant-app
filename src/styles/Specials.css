@@ -1,0 +1,148 @@
+.specials {
+    padding: 145px 200px 100px 200px;
+}
+
+.specials-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.specials-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 60px;
+    padding-left: 10px;
+    gap: 40px;
+}
+
+.menu-card {
+    width: 300px;
+    height: 440px;
+    background-color: var(--secondary-gray);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    display: grid;
+    grid-template-rows: 185px, 1fr, auto, 1fr;
+}
+
+.menu-card-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.menu-card-name {
+    font-family: var(--primary-font);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 0.5;
+    color: var(--primary-green);
+}
+
+.menu-card-price {
+    color: var(--secondary-koral);
+    font-family: var(--secondary-font-fam);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.menu-card-description {
+    padding-left: 40px;
+    width: 230px;
+    height: 110px;
+    color: var(--primary-green);
+    font-family: var(--secondary-font-fam);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.order-delivery {
+    display: flex;
+    padding: 0px 40px;
+    padding-bottom: 20px;
+    gap: 20px;
+    color: #333333;
+}
+
+.menu-card>img {
+    width: 300px;
+    height: 185px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+
+.menu-delievery-icon {
+    width: 17px;
+    height: 10px;
+    position: relative;
+    top: 27px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .specials {
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
+
+    .specials-title-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 40px;
+    }
+
+    .specials-title {
+        line-height: 0.75;
+    }
+
+    .specials-cards-wrapper {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1064px) {
+
+    .specials {
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+    }
+
+    .specials-cards-wrapper {
+        padding-left: 0px;
+        gap: 25px;
+    }
+
+    .menu-card {
+        width: 220px;
+        grid-template-rows: 185px, 0.5fr, auto, 1fr;
+    }
+
+    .menu-card-title,
+    .order-delivery {
+        padding: 0px 20px;
+    }
+
+    .menu-card-name {
+        line-height: 0.25;
+        margin-bottom: 0px;
+    }
+
+    .menu-card>img {
+        width: 220px;
+    }
+
+    .menu-card-description {
+        margin-top: 0px;
+        padding-left: 20px;
+        width: 180px;
+    }
+
+}

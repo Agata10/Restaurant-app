@@ -1,5 +1,6 @@
 import { Button } from './Button';
 import { MenuCard } from './MenuCard';
+import '../styles/Specials.css';
 
 export const Specials = () => {
   const specials = [
@@ -21,24 +22,29 @@ export const Specials = () => {
       title: 'Lemon Dessert',
       price: '5.00$',
       description:
-        'Our BruschThis comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.etta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.',
+        'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.',
       getImageSrc: () => require('../images/lemon dessert.jpg'),
     },
   ];
 
   return (
     <div className="specials">
-      <h1>This weeks specials!</h1>
-      <Button title="Online Menu" />
-      {specials.map((special) => (
-        <MenuCard
-          key={special.title}
-          title={special.title}
-          price={special.price}
-          description={special.description}
-          imageSrc={special.getImageSrc()}
-        />
-      ))}
+      <div className="specials-title-wrapper">
+        <h1 className="specials-title">This weeks specials!</h1>
+        <Button className="btn-menu" title="Online Menu" />
+      </div>
+
+      <div className="specials-cards-wrapper">
+        {specials.map((special) => (
+          <MenuCard
+            key={special.title}
+            title={special.title}
+            price={special.price}
+            description={special.description}
+            imageSrc={special.getImageSrc()}
+          />
+        ))}
+      </div>
     </div>
   );
 };
