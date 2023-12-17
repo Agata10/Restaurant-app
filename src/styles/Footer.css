@@ -1,13 +1,15 @@
 footer {
     display: flex;
     justify-content: space-around;
-
+    padding: 70px 200px 70px 200px;
     font-family: var(--secondary-font-fam);
     color: var(--primary-green);
     font-size: 16px;
+    background-color: var(--secondary-gray);
+    border-top: 3px solid var(--primary-green);
 }
 
-footer img {
+footer>img {
     padding-right: 40px;
 }
 
@@ -15,11 +17,16 @@ footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    color: #3333;
 }
 
 footer ul li {
     line-height: 26px;
     font-weight: 500;
+}
+
+footer ul li a:visited {
+    color: var(--secondary-koral);
 }
 
 footer section {
@@ -30,12 +37,13 @@ footer section {
 }
 
 
-@media only screen and (max-width: 762px) {
+@media only screen and (max-width: 767px) {
     footer {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         gap: 10px;
+        padding: 30px 1vw 30px 1vw;
+        align-items: center;
+        width: 100vw;
     }
 
     footer img {
@@ -53,4 +61,8 @@ footer section {
 }
 
 
-@media only screen and (min-width: 763px) and (max-width: 1064px) {}
+@media only screen and (min-width: 768px) and (max-width: 1064px) {
+    footer {
+        padding: 30px 10vw 30px 10vw;
+    }
+}

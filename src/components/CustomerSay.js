@@ -1,5 +1,6 @@
 import React from 'react';
 import { CustomerCard } from './CustomerCard';
+import '../styles/CustomerSay.css';
 
 export const CustomerSay = () => {
   const customers = [

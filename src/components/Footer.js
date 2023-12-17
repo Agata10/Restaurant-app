@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer>
       <img
-        style={{ width: '160px', height: '200px' }}
+        style={{ borderRadius: '8px', width: '200px', height: '280px' }}
         src={restaurant}
         alt="restaurant"
       />

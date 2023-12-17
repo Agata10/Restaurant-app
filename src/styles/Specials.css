@@ -94,7 +94,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 20px;
-        padding-left: 40px;
+        padding-left: 80px;
     }
 
     .specials-title {
@@ -111,8 +111,8 @@
 @media only screen and (min-width: 768px) and (max-width: 1064px) {
 
     .specials {
-        padding-right: 2.5vw;
-        padding-left: 2.5vw;
+        padding-right: 10vw;
+        padding-left: 10vw;
     }
 
     .specials-cards-wrapper {

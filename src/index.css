@@ -16,8 +16,8 @@ body {
   box-sizing: border-box;
 }
 
-.container {
-  padding: 25px 0px 70px 0px;
+#root {
+  padding: 25px 0px 0px 0px;
   display: flex;
   flex-direction: column;
 }
@@ -27,7 +27,7 @@ h1 {
   font-weight: 500;
   font-size: 64px;
   margin: 0;
-  line-height: 0.5;
+  line-height: 0.6;
 }
 
 h2 {
@@ -45,6 +45,12 @@ a {
 
 a:visited {
   color: var(--primary-yellow);
+}
+
+p {
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  font-size: 18px
 }
 
 img {
@@ -72,5 +78,14 @@ button {
     align-items: center;
     justify-content: center;
     padding: 25px 0px 15px 0px;
+  }
+}
+
+@media only screen and (min-width: 763px) and (max-width: 1064px) {
+
+  #root {
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
   }
 }
