@@ -50,6 +50,7 @@ header ul li {
     header {
         padding-right: 2.5vw;
         padding-left: 2.5vw;
+        gap: 20px;
     }
 
     header ul li {

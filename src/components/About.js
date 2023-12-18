@@ -9,7 +9,7 @@ export const About = ({ data }) => {
   const description =
     'Little Lemon is a charming neighborhood bistro that serves simple food and classic coctails in a lively but casual enviroment. The restaurant features a localy-sourced menu with daily specials.';
   return (
-    <div className="about-wrapper">
+    <div id="about" className="about-wrapper">
       <Chicago data={{ ...data, description: description, classVar }} />
       <div className="about-pic-wrapper">
         <div

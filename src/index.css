@@ -10,6 +10,10 @@
   --primary-font: 'Markazi Text', serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -37,6 +41,7 @@ h2 {
   margin: 0;
 }
 
+.nav-item,
 a {
   font-family: var(--secondary-font-fam);
   color: var(--primary-green);
