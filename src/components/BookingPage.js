@@ -8,6 +8,7 @@ export const BookingPage = (props) => {
       <BookingForm
         avaiableTimes={props.avaiableTimes}
         dispatch={props.dispatch}
+        onSubmit={props.onSubmit}
       />
     </div>
   );
