@@ -57,7 +57,7 @@ export const BookingForm = (props) => {
           type="string"
           id="name"
           name="name"
-          autocomplete="on"
+          autoComplete="on"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.name}
@@ -70,7 +70,7 @@ export const BookingForm = (props) => {
           type="email"
           id="email"
           name="email"
-          autocomplete="on"
+          autoComplete="on"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.email}

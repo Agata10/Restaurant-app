@@ -1,10 +1,13 @@
 import logo from '../images/Logo .svg';
 import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header>
-      <img className="logo" src={logo} alt="Logo" />
+      <Link to="/">
+        <img className="logo" src={logo} alt="Logo" />
+      </Link>
       <Nav />
     </header>
   );
