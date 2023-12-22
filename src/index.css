@@ -76,12 +76,11 @@ button {
   width: 180px;
   height: 40px;
   text-align: center;
-  font-family: var(--secondary-font-fam);
-  font-size: 16px;
-  font-weight: 700;
   border: none;
   cursor: pointer;
 }
+
+
 
 .contact-info {
   display: flex;

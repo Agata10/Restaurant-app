@@ -31,7 +31,7 @@ export const Specials = () => {
     <div className="specials">
       <div className="specials-title-wrapper">
         <h1 className="specials-title">This weeks specials!</h1>
-        <Button className="btn-menu" title="Online Menu" />
+        <Button className="btn-menu" title="Online Menu" link="/menu" />
       </div>
 
       <div className="specials-cards-wrapper">
