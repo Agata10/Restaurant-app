@@ -20,7 +20,7 @@ function Main() {
     submitAPI(formData);
     if (submitAPI(formData)) {
       navigate('/reservations/confirmation');
-      localStorage.setItem('Bookings', JSON.stringify(formData));
+      localStorage.setItem('Reservation', JSON.stringify(formData));
     }
   };
 
