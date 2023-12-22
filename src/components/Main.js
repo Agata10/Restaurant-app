@@ -1,40 +1,46 @@
 import { Homepage } from './Homepage';
 import { BookingPage } from './BookingPage';
-import { Route, Routes } from 'react-router-dom';
+import { ConfirmedBooking } from './ConfirmedBooking';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import { useReducer } from 'react';
+import { fetchData, submitAPI } from '../API';
+
+const initializeTimes = { avaiableTimes: fetchData(new Date()) };
+
+const updateTimes = (state, date) => {
+  state = { avaiableTimes: fetchData(new Date(date)) };
+  return state;
+};
 
 function Main() {
-  const initializeTimes = [
-    '17:00',
-    '18:00',
-    '19:00',
-    '20:00',
-    '21:00',
-    '22:00',
-  ];
-
-  const updateTimes = (state, date) => {
-    return [...initializeTimes];
-  };
-
   const [state, dispatch] = useReducer(updateTimes, initializeTimes);
+  const navigate = useNavigate();
 
-  const handleSubmit = () => {
-    dispatch();
+  const submitForm = (formData) => {
+    submitAPI(formData);
+    if (submitAPI(formData)) {
+      navigate('/reservations/confirmation');
+      localStorage.setItem('Bookings', JSON.stringify(formData));
+    }
   };
+
   return (
     <main>
       <Routes>
-         <Route path="/" element={<Homepage />}></Route>
+        <Route path="/" element={<Homepage />}></Route>
         <Route
           path="/reservations"
           element={
             <BookingPage
               avaiableTimes={state}
               dispatch={dispatch}
-              onSubmit={handleSubmit}
+              onSubmit={submitForm}
             />
           }
+        ></Route>
+        <Route
+          path="/reservations/confirmation"
+          element={<ConfirmedBooking />}
         ></Route>
       </Routes>
     </main>

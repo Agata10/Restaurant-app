@@ -20,18 +20,24 @@ export const BookingForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(
-      'Date ' +
-        date +
-        ' time ' +
-        time +
-        ' guests: ' +
-        guests +
-        ' ocassion ' +
-        occasion,
-    );
+    // alert(
+    //   'Date ' +
+    //     date +
+    //     ' time ' +
+    //     time +
+    //     ' guests: ' +
+    //     guests +
+    //     ' ocassion ' +
+    //     occasion,
+    // );
     clearForm();
-    props.onSubmit();
+    console.log(e);
+    props.onSubmit({
+      date: date,
+      time: time,
+      guests: guests,
+      occasion: occasion,
+    });
   };
 
   const handleChange = (e) => {
@@ -64,7 +70,7 @@ export const BookingForm = (props) => {
             setTime(e.target.value);
           }}
         >
-          {props.avaiableTimes?.map((avTime) => (
+          {props.avaiableTimes?.avaiableTimes.map((avTime) => (
             <option key={avTime}>{avTime}</option>
           ))}
         </select>
