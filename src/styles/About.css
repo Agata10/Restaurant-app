@@ -45,6 +45,7 @@
         padding: 45px 1vw 50px 1vw;
         gap: 0px;
         justify-items: center;
+        justify-content: center;
     }
 
     .about-pic-wrapper {
@@ -59,7 +60,7 @@
     }
 
     .first {
-        left: 60px;
+        left: 50px;
     }
 
     .second {
@@ -73,7 +74,7 @@
 
     .about-wrapper {
         padding-right: 0px;
-        padding-left: 10vw;
+        padding-left: 12vw;
         gap: 30px;
     }
 

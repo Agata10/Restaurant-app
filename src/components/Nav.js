@@ -1,11 +1,21 @@
+import { useState } from 'react';
 import '../styles/Nav.css';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import Hamburger from '../images/hamburger.svg';
 
 function Nav() {
+  const [showNav, setShowNav] = useState(false);
+
+  const toggleNavItems = () => {
+    setShowNav(!showNav);
+  };
   return (
-    <nav>
-      <ul>
+    <nav className="navbar">
+      <div className="menu-icon" onClick={toggleNavItems}>
+        <img src={Hamburger} alt="hamburger" />
+      </div>
+      <ul className={`nav-elements  ${showNav && 'active'}`}>
         <li>
           <Link className="nav-item" to="/">
             Home

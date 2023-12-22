@@ -24,33 +24,61 @@ header ul li {
     font-weight: 700;
 }
 
-@media only screen and (max-width: 767px) {
-
-    header {
-        flex-direction: column;
-        justify-content: center;
-        padding-right: 1vw;
-        padding-left: 1vw;
-    }
-
-    header ul {
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    header ul li {
-        font-size: 0.9rem;
-        text-align: center;
-    }
+.menu-icon {
+    display: none;
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1064px) {
+@media only screen and (max-width: 767px) {
+
 
     header {
-        padding-right: 2.5vw;
-        padding-left: 2.5vw;
-        gap: 20px;
+        justify-content: baseline;
+        padding-right: 0vw;
+        padding-left: 2vw;
+        margin: 0 auto;
+    }
+
+    .nav-elements {
+        position: absolute;
+        width: 0;
+        right: 0;
+        top: 90px;
+        background-color: white;
+        width: 0px;
+        height: calc(100vh - 90px);
+        overflow: hidden;
+        transition: all 0.3s ease-out;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-elements.active {
+        width: 270px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .nav-elements ul li {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        width: 70px;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    header {
+        flex-direction: column;
+        padding-right: 0px;
+        padding-left: 0px;
+        gap: 10px;
     }
 
     header ul li {
@@ -58,8 +86,7 @@ header ul li {
     }
 
     header ul {
-        gap: 10px;
+        gap: 30px;
         margin: 0px;
     }
-
 }
