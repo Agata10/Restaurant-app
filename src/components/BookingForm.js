@@ -1,9 +1,16 @@
 import React from 'react';
-//import { useState } from 'react';
+import { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
 export const BookingForm = (props) => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [date, setDate] = useState('');
+  const [time, setTime] = useState(props.avaiableTimes.avaiableTimes[0]);
+  const [guests, setGuests] = useState('1');
+  const [occasion, setOccasion] = useState('');
+
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -11,7 +18,7 @@ export const BookingForm = (props) => {
       date: '',
       time: props.avaiableTimes.avaiableTimes[0],
       guests: '1',
-      occasion: 'birthday',
+      occasion: '',
     },
     validationSchema: Yup.object({
       name: Yup.string()
@@ -20,16 +27,32 @@ export const BookingForm = (props) => {
         .required('Required'),
       email: Yup.string().email('Invalid email address').required('Required'),
       date: Yup.date().required('Required'),
+      time: Yup.string().required('Required'),
       guests: Yup.number()
         .min(1, 'At least 1 guest required')
         .max(10, 'Maximum of 10 guests')
         .required('Required'),
+      occasion: Yup.string().required('Required'),
     }),
     onSubmit: (values) => {
       submitForm(values);
-      alert(JSON.stringify(values, null, 2));
+      //alert(JSON.stringify(values, null, 2));
     },
   });
+
+  const clearForm = () => {
+    setName('');
+    setEmail('');
+    setDate('');
+    setTime('');
+    setGuests('');
+    setOccasion('');
+  };
+
+  const handleDateChange = (e) => {
+    setDate(e);
+    props.dispatch(e);
+  };
 
   const submitForm = (e) => {
     console.log(e);
@@ -43,11 +66,12 @@ export const BookingForm = (props) => {
       occasion: e.occasion,
     });
     props.dispatch(e);
+    clearForm();
   };
 
   return (
     <>
-      <h1>Book now</h1>
+      <h1>Reserve a table</h1>
       <form
         style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}
         onSubmit={formik.handleSubmit}
@@ -58,9 +82,12 @@ export const BookingForm = (props) => {
           id="name"
           name="name"
           autoComplete="on"
-          onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.name}
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+            formik.handleChange(e);
+          }}
         />
         {formik.touched.name && formik.errors.name ? (
           <div>{formik.errors.name}</div>
@@ -71,9 +98,12 @@ export const BookingForm = (props) => {
           id="email"
           name="email"
           autoComplete="on"
-          onChange={formik.handleChange}
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+            formik.handleChange(e);
+          }}
           onBlur={formik.handleBlur}
-          value={formik.values.email}
         />
         {formik.touched.email && formik.errors.email ? (
           <div>{formik.errors.email}</div>
@@ -83,9 +113,12 @@ export const BookingForm = (props) => {
           type="date"
           id="date"
           name="date"
-          onChange={formik.handleChange}
+          value={date}
+          onChange={(e) => {
+            handleDateChange(e.target.value);
+            formik.handleChange(e);
+          }}
           onBlur={formik.handleBlur}
-          value={formik.values.date}
         />
         {formik.touched.date && formik.errors.date ? (
           <div>{formik.errors.date}</div>
@@ -94,8 +127,11 @@ export const BookingForm = (props) => {
         <select
           id="time"
           name="time"
-          onChange={formik.handleChange}
-          value={formik.values.time}
+          value={time}
+          onChange={(e) => {
+            setTime(e.target.value);
+            formik.handleChange(e);
+          }}
           onBlur={formik.handleBlur}
         >
           {props.avaiableTimes?.avaiableTimes.map((avTime) => (
@@ -113,8 +149,11 @@ export const BookingForm = (props) => {
           max="10"
           id="guests"
           name="guests"
-          onChange={formik.handleChange}
-          value={formik.values.guests}
+          value={guests}
+          onChange={(e) => {
+            setGuests(e.target.value);
+            formik.handleChange(e);
+          }}
           onBlur={formik.handleBlur}
         />
         {formik.touched.guests && formik.errors.guests ? (
@@ -124,11 +163,14 @@ export const BookingForm = (props) => {
         <select
           id="occasion"
           name="occasion"
-          onChange={formik.handleChange}
-          value={formik.values.occasion}
+          value={occasion}
+          onChange={(e) => {
+            setOccasion(e.target.value);
+            formik.handleChange(e);
+          }}
           onBlur={formik.handleBlur}
         >
-          <option value=""></option>
+          <option defaultValue="">Occasion</option>
           <option value="birthday">Birthday</option>
           <option value="engagement">Engagement</option>
           <option value="anniversary">Anniversary</option>
@@ -137,7 +179,7 @@ export const BookingForm = (props) => {
           <option value="gradiuation">Gradiuation</option>
         </select>
         {formik.touched.occasion && formik.errors.occasion ? (
-          <div>{formik.errors.guests}</div>
+          <div>{formik.errors.occasion}</div>
         ) : null}
         <input type="submit" value="Make Your reservation" />
       </form>
