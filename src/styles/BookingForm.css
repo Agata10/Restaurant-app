@@ -142,8 +142,9 @@ select {
 }
 
 #submit {
+    margin-top: 20px;
     color: var(--primary-green);
-    width: 250px;
+    width: 260px;
     font-family: var(--secondary-font-fam);
     font-size: 16px;
     font-weight: 700;

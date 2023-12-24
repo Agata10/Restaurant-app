@@ -12,6 +12,6 @@ const style = {
   textAlign: 'center',
 };
 
-export const ConfirmedBooking = () => {
-  return <div style={style}> Your booking has been confirmed!</div>;
+export const Menu = () => {
+  return <div style={style}>Comming soon!</div>;
 };

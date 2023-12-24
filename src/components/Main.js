@@ -1,9 +1,10 @@
 import { Homepage } from './Homepage';
 import { BookingPage } from './BookingPage';
 import { ConfirmedBooking } from './ConfirmedBooking';
-import { Route, Routes, json, useNavigate } from 'react-router-dom';
-import { useReducer, useEffect, useState } from 'react';
+import { Route, Routes, useNavigate } from 'react-router-dom';
+import { useReducer } from 'react';
 import { fetchData, submitAPI } from '../API';
+import { Menu } from './Menu';
 
 const initializeTimes = { avaiableTimes: fetchData(new Date()) };
 
@@ -28,6 +29,7 @@ function Main() {
     <main>
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
+        <Route path="/menu" element={<Menu />}></Route>
         <Route
           path="/reservations"
           element={
@@ -42,6 +44,7 @@ function Main() {
           path="/reservations/confirmation"
           element={<ConfirmedBooking />}
         ></Route>
+        <Route path="/login" element={<Menu />}></Route>
       </Routes>
     </main>
   );

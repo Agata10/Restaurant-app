@@ -78,10 +78,10 @@ function Footer() {
             <a href="http://facebook.com">Facebook</a>
           </li>
           <li>
-            <a href="instagram.com">Instagram</a>
+            <a href="http://instagram.com">Instagram</a>
           </li>
           <li>
-            <a href="twitter.com">Twitter</a>
+            <a href="http://twitter.com">Twitter</a>
           </li>
         </ul>
       </section>
