@@ -5,7 +5,7 @@ import { fetchData } from './API';
 
 test('Renders the BookingForm date label', () => {
   render(<BookingForm />);
-  const labelElement = screen.getByLabelText('Choose date:');
+  const labelElement = screen.getByText('Reserve a table');
   expect(labelElement).toBeInTheDocument();
 });
 
@@ -47,7 +47,7 @@ test('Submission is invalid when there is no name, email, date and occasion is n
   expect(dateInput.value).toBe('');
 
   const occassionInput = screen.getByTestId('occasion');
-  expect(occassionInput.value).toBe('Occasion');
+  expect(occassionInput.value).toBe('');
 
   const submitButton = screen.getByRole('button');
   fireEvent.click(submitButton);

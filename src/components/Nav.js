@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../styles/Nav.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Hamburger from '../images/hamburger.svg';
 
@@ -17,9 +17,14 @@ function Nav() {
       </div>
       <ul className={`nav-elements  ${showNav && 'active'}`}>
         <li>
-          <Link className="nav-item" to="/">
+          <NavLink
+            className={(navData) =>
+              navData.isActive ? ' nav-item underline' : 'nav-item'
+            }
+            to="/"
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
           <HashLink className="nav-item" to="/#about">
@@ -27,24 +32,45 @@ function Nav() {
           </HashLink>
         </li>
         <li>
-          <Link className="nav-item" to="/menu">
+          <NavLink
+            className={(navData) =>
+              navData.isActive ? ' nav-item underline' : 'nav-item'
+            }
+            to="/menu"
+          >
             Menu
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="nav-item" to="/reservations">
+          <NavLink
+            className={(navData) =>
+              navData.isActive ? ' nav-item underline' : 'nav-item'
+            }
+            to="/reservations"
+          >
             Reservations
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="nav-item" to="/order-online">
+          <NavLink
+            target="_blank"
+            className={(navData) =>
+              navData.isActive ? ' nav-item underline' : 'nav-item'
+            }
+            to="https://www.ubereats.com/"
+          >
             Order online
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="nav-item" to="/login">
+          <NavLink
+            className={(navData) =>
+              navData.isActive ? ' nav-item underline' : 'nav-item'
+            }
+            to="/login"
+          >
             Login
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

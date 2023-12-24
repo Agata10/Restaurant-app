@@ -8,7 +8,7 @@ const linkStyle = {
 };
 export const Button = (props) => {
   return (
-    <button className="btn" type="button">
+    <button className="btn" type="button" aria-label="On Click">
       <Link to={props.link} style={linkStyle}>
         {' '}
         {props.title}{' '}

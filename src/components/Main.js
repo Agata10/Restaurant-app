@@ -1,8 +1,8 @@
 import { Homepage } from './Homepage';
 import { BookingPage } from './BookingPage';
 import { ConfirmedBooking } from './ConfirmedBooking';
-import { Route, Routes, useNavigate } from 'react-router-dom';
-import { useReducer } from 'react';
+import { Route, Routes, json, useNavigate } from 'react-router-dom';
+import { useReducer, useEffect, useState } from 'react';
 import { fetchData, submitAPI } from '../API';
 
 const initializeTimes = { avaiableTimes: fetchData(new Date()) };

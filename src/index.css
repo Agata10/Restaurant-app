@@ -58,6 +58,14 @@ a:visited {
   color: var(--primary-yellow);
 }
 
+li:hover {
+  transform: scale(1.2);
+}
+
+.underline {
+  border-bottom: 2px solid var(--secondary-koral);
+}
+
 p {
   font-weight: 700;
   font-family: var(--secondary-font);
@@ -80,7 +88,9 @@ button {
   cursor: pointer;
 }
 
-
+button:hover {
+  background-color: var(--secondary-koral);
+}
 
 .contact-info {
   display: flex;
