@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/restaurant-app/static/css/main.e5e2cf98.css",
+    "main.js": "/restaurant-app/static/js/main.1989a0a5.js",
+    "static/js/787.b7a98561.chunk.js": "/restaurant-app/static/js/787.b7a98561.chunk.js",
+    "static/media/Mario and Adrian A.jpg": "/restaurant-app/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
+    "static/media/Mario and Adrian b.jpg": "/restaurant-app/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
+    "static/media/greek salad.jpg": "/restaurant-app/static/media/greek salad.bed423a1fab5b210e347.jpg",
+    "static/media/restauranfood.jpg": "/restaurant-app/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/bruchetta.png": "/restaurant-app/static/media/bruchetta.e67eef455a20da7a7a3b.png",
+    "static/media/restaurant.jpg": "/restaurant-app/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
+    "static/media/Logo .svg": "/restaurant-app/static/media/Logo .4f57f2b826cccfbe2dafa275e9857aa6.svg",
+    "static/media/2.png": "/restaurant-app/static/media/2.ccdcea01362423e8e2bf.png",
+    "static/media/4.png": "/restaurant-app/static/media/4.ba5a7f9f30d58ab385d9.png",
+    "static/media/5.png": "/restaurant-app/static/media/5.fa4be855aa1466a1fcb3.png",
+    "static/media/1.png": "/restaurant-app/static/media/1.333854849cb34643a28e.png",
+    "static/media/delievery.svg": "/restaurant-app/static/media/delievery.c74f3c815d2901fc52a60886e0cdc924.svg",
+    "index.html": "/restaurant-app/index.html",
+    "static/media/hamburger.svg": "/restaurant-app/static/media/hamburger.c03930bf2a70beb6a50f5b5c3368bc73.svg",
+    "main.e5e2cf98.css.map": "/restaurant-app/static/css/main.e5e2cf98.css.map",
+    "main.1989a0a5.js.map": "/restaurant-app/static/js/main.1989a0a5.js.map",
+    "787.b7a98561.chunk.js.map": "/restaurant-app/static/js/787.b7a98561.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5e2cf98.css",
+    "static/js/main.1989a0a5.js"
+  ]
+}
