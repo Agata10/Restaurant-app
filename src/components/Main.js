@@ -29,9 +29,12 @@ function Main() {
     <main>
       <Routes>
         <Route path="/restaurant-app" element={<Homepage />}></Route>
-        <Route path="/menu" element={<MenuLogin title={'Our Menu'} />}></Route>
         <Route
-          path="/reservations"
+          path="/restautant-app/menu"
+          element={<MenuLogin title={'Our Menu'} />}
+        ></Route>
+        <Route
+          path="/restautant-app/reservations"
           element={
             <BookingPage
               avaiableTimes={state}
@@ -41,7 +44,7 @@ function Main() {
           }
         ></Route>
         <Route
-          path="/reservations/confirmation"
+          path="/restautant-app/reservations/confirmation"
           element={<ConfirmedBooking />}
         ></Route>
         <Route path="/login" element={<MenuLogin title={'Login'} />}></Route>

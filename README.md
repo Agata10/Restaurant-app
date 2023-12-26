@@ -54,7 +54,9 @@ I wrote tests to check if the data from API has proper initial state values and 
 
 I wrote tests to check if the form has diabled button when the inputs are empty and check if form is submmiting correctly if everything is filled.
 
-## Link to game
+## Link to webpage
+
+https://agata10.github.io/restautant-app
 
 ## Setup
 

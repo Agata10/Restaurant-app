@@ -27,7 +27,7 @@ function Nav() {
           </NavLink>
         </li>
         <li>
-          <HashLink className="nav-item" to="/#about">
+          <HashLink className="nav-item" to="/restautant-app/#about">
             About
           </HashLink>
         </li>
@@ -36,7 +36,7 @@ function Nav() {
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/menu"
+            to="/restautant-app/menu"
           >
             Menu
           </NavLink>
@@ -46,7 +46,7 @@ function Nav() {
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/reservations"
+            to="/restautant-app/reservations"
           >
             Reservations
           </NavLink>
@@ -65,7 +65,7 @@ function Nav() {
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/login"
+            to="/restautant-app/login"
           >
             Login
           </NavLink>
