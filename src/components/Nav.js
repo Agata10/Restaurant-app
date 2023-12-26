@@ -54,9 +54,7 @@ function Nav() {
         <li>
           <NavLink
             target="_blank"
-            className={(navData) =>
-              navData.isActive ? ' nav-item underline' : 'nav-item'
-            }
+            className="nav-item"
             to="https://www.ubereats.com/"
           >
             Order online
