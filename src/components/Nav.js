@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../styles/Nav.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Hamburger from '../images/hamburger.svg';
 
@@ -52,13 +52,13 @@ function Nav() {
           </NavLink>
         </li>
         <li>
-          <NavLink
+          <Link
             target="_blank"
             className="nav-item"
             to="https://www.ubereats.com/"
           >
             Order online
-          </NavLink>
+          </Link>
         </li>
         <li>
           <NavLink
