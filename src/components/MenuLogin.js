@@ -1,5 +1,4 @@
 import React from 'react';
-import { MenuCard } from './MenuCard';
 import '../styles/Specials.css';
 
 const style = {

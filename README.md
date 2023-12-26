@@ -1,74 +1,78 @@
 <<<<<<< HEAD
-# restaurant-app
+
+# Restaurant-app
+
 =======
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Mockup](#mockup)
+- [General Info](#general-information)
+- [Technologies](#technologies)
+- [Challenges](#challenges)
+- [Link to webpage](#link-to-webpage)
+- [Setup](#setup)
+- [Usage](#usage)
 
-In the project directory, you can run:
+## Mockup
 
-### `npm start`
+![Wepage](./public/mockup.jpeg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## General information
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Project is one of the task from [Meta Course](https://www.coursera.org/learn/meta-front-end-developer-capstone) .
 
-### `npm test`
+The main goal was building the feature of reserving a table for Little Lemon Restaurant. The menu, login and order online are not working !!!!!! It was not the task to focus on.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tasks:
 
-### `npm run build`
+1. Planning and creating UX/UI design which included wireframe and prototyping in Figma
+2. Working with meta tags and open graph protocol to make sure my app is accessible.
+3. Creating responisve layout.
+4. Using semating HTML tags, labels and ARIA attribiutes for accesssiblity.
+5. Practising using hooks: useState, useReducer, useFormik, useEffect
+6. Working with external API which would get different times for booking a table depending on the chosen date.
+7. Writing unit test with Jest and React Testing Library.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- CSS3
+- HTML5
+- JavaScript
+- React
+- React Testing Library
+- Jest unit testing
+- LocalStorage
+- API
+- from validation with useFormik
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Challenges
 
-### `npm run eject`
+The API given by Meta was unfortunately is not working so I did not use useEffect hook. I put the API in seperate file and just imported needed functions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+For form validation instead of using JavaScript/HTML I wanted to learn useFormik and that is what I used.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I used LocalStrage to check if my data is correctly submitted.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+I wrote tests to check if the data from API has proper initial state values and if the updating time is working correctly( updating the state).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+I wrote tests to check if the form has diabled button when the inputs are empty and check if form is submmiting correctly if everything is filled.
 
-## Learn More
+## Link to game
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork repository
 
-### Code Splitting
+2. Clone reposiory
+   `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Run
+   `npm start`
 
-### Analyzing the Bundle Size
+4. Testing, run
+   `npm test`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 94424f9 (Initialize project using Create React App)
+The websites main task was creatig a booking page. Reserving a table has a form validation with useFormik.
