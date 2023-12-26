@@ -4,7 +4,7 @@ import { ConfirmedBooking } from './ConfirmedBooking';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import { useReducer } from 'react';
 import { fetchData, submitAPI } from '../API';
-import { Menu } from './Menu';
+import { MenuLogin } from './MenuLogin';
 
 const initializeTimes = { avaiableTimes: fetchData(new Date()) };
 
@@ -29,7 +29,7 @@ function Main() {
     <main>
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
-        <Route path="/menu" element={<Menu />}></Route>
+        <Route path="/menu" element={<MenuLogin title={'Our Menu'} />}></Route>
         <Route
           path="/reservations"
           element={
@@ -44,7 +44,7 @@ function Main() {
           path="/reservations/confirmation"
           element={<ConfirmedBooking />}
         ></Route>
-        <Route path="/login" element={<Menu />}></Route>
+        <Route path="/login" element={<MenuLogin title={'Login'} />}></Route>
       </Routes>
     </main>
   );

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../styles/Nav.css';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Hamburger from '../images/hamburger.svg';
 
