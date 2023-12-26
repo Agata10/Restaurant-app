@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-
 # Restaurant-app
-
-=======
 
 ## Table of Contents
 
