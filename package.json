@@ -1,6 +1,6 @@
 {
-  "homepage": "http://Agata10.github.io/restaurant-app",
   "name": "restaurant-app",
+  "homepage": "http://Agata10.github.io/restaurant-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
