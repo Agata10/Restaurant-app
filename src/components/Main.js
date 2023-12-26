@@ -28,7 +28,7 @@ function Main() {
   return (
     <main>
       <Routes>
-        <Route path="/restaurant-app" element={<Homepage />}></Route>
+        <Route path="/restaurant-app/" element={<Homepage />}></Route>
         <Route
           path="/restautant-app/menu"
           element={<MenuLogin title={'Our Menu'} />}
