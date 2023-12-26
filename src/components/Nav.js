@@ -21,7 +21,7 @@ function Nav() {
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/"
+            to="/restautant-app"
           >
             Home
           </NavLink>
