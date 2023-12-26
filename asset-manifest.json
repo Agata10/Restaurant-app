@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/restaurant-app/static/css/main.e5e2cf98.css",
-    "main.js": "/restaurant-app/static/js/main.7aafd869.js",
+    "main.js": "/restaurant-app/static/js/main.1fd7ea39.js",
     "static/js/787.b7a98561.chunk.js": "/restaurant-app/static/js/787.b7a98561.chunk.js",
     "static/media/Mario and Adrian A.jpg": "/restaurant-app/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
     "static/media/Mario and Adrian b.jpg": "/restaurant-app/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
@@ -18,11 +18,11 @@
     "index.html": "/restaurant-app/index.html",
     "static/media/hamburger.svg": "/restaurant-app/static/media/hamburger.c03930bf2a70beb6a50f5b5c3368bc73.svg",
     "main.e5e2cf98.css.map": "/restaurant-app/static/css/main.e5e2cf98.css.map",
-    "main.7aafd869.js.map": "/restaurant-app/static/js/main.7aafd869.js.map",
+    "main.1fd7ea39.js.map": "/restaurant-app/static/js/main.1fd7ea39.js.map",
     "787.b7a98561.chunk.js.map": "/restaurant-app/static/js/787.b7a98561.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e5e2cf98.css",
-    "static/js/main.7aafd869.js"
+    "static/js/main.1fd7ea39.js"
   ]
 }
