@@ -56,7 +56,7 @@ I wrote tests to check if the form has diabled button when the inputs are empty 
 
 ## Link to webpage
 
-https://agata10.github.io/restautant-app
+https://agata10.github.io/restaurant-app
 
 ## Setup
 

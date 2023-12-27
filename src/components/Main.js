@@ -30,7 +30,7 @@ function Main() {
       <Routes>
         <Route path="/restaurant-app/" element={<Homepage />}></Route>
         <Route
-          path="/restautant-app/menu"
+          path="/restaurant-app/menu"
           element={<MenuLogin title={'Our Menu'} />}
         ></Route>
         <Route
