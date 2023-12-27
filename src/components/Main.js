@@ -20,7 +20,7 @@ function Main() {
   const submitForm = (formData) => {
     submitAPI(formData);
     if (submitAPI(formData)) {
-      navigate('/reservations/confirmation');
+      navigate('/restaurant-app/reservations/confirmation');
       localStorage.setItem('Reservation', JSON.stringify(formData));
     }
   };
