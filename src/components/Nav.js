@@ -21,13 +21,13 @@ function Nav() {
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/restautant-app/"
+            to="/restaurant-app/"
           >
             Home
           </NavLink>
         </li>
         <li>
-          <HashLink className="nav-item" to="/restautant-app/#about">
+          <HashLink className="nav-item" to="/restaurant-app/#about">
             About
           </HashLink>
         </li>
@@ -36,7 +36,7 @@ function Nav() {
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/restautant-app/menu"
+            to="/restaurant-app/menu"
           >
             Menu
           </NavLink>
@@ -46,7 +46,7 @@ function Nav() {
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/restautant-app/reservations"
+            to="/restaurant-app/reservations"
           >
             Reservations
           </NavLink>
@@ -65,7 +65,7 @@ function Nav() {
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/restautant-app/login"
+            to="/restaurant-app/login"
           >
             Login
           </NavLink>

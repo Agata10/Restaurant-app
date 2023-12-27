@@ -34,7 +34,7 @@ function Main() {
           element={<MenuLogin title={'Our Menu'} />}
         ></Route>
         <Route
-          path="/restautant-app/reservations"
+          path="/restaurant-app/reservations"
           element={
             <BookingPage
               avaiableTimes={state}
@@ -44,10 +44,13 @@ function Main() {
           }
         ></Route>
         <Route
-          path="/restautant-app/reservations/confirmation"
+          path="/restaurant-app/reservations/confirmation"
           element={<ConfirmedBooking />}
         ></Route>
-        <Route path="/login" element={<MenuLogin title={'Login'} />}></Route>
+        <Route
+          path="/restaurant-app//login"
+          element={<MenuLogin title={'Login'} />}
+        ></Route>
       </Routes>
     </main>
   );
