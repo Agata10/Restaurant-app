@@ -21,13 +21,13 @@ function Nav() {
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/"
+            to="/restaurant-app"
           >
             Home
           </NavLink>
         </li>
         <li onClick={toggleNavItems}>
-          <HashLink className="nav-item" to="/#about">
+          <HashLink className="nav-item" to="/restaurant-app/#about">
             About
           </HashLink>
         </li>
