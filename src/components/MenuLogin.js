@@ -19,7 +19,7 @@ export const MenuLogin = (props) => {
   return (
     <div style={style}>
       <h1>{props.title}</h1>
-      <h4>Comming Soon...</h4>
+      <h4>Coming Soon...</h4>
     </div>
   );
 };
