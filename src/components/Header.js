@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <header>
-      <Link to="/restaurant-app/">
+      <Link to="/">
         <img className="logo" src={logo} alt="Logo" />
       </Link>
       <Nav />

@@ -16,42 +16,42 @@ function Nav() {
         <img src={Hamburger} alt="hamburger" />
       </div>
       <ul className={`nav-elements  ${showNav && 'active'}`}>
-        <li>
+        <li onClick={toggleNavItems}>
           <NavLink
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/restaurant-app/"
+            to="/"
           >
             Home
           </NavLink>
         </li>
-        <li>
-          <HashLink className="nav-item" to="/restaurant-app/#about">
+        <li onClick={toggleNavItems}>
+          <HashLink className="nav-item" to="/#about">
             About
           </HashLink>
         </li>
-        <li>
+        <li onClick={toggleNavItems}>
           <NavLink
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/restaurant-app/menu"
+            to="/menu"
           >
             Menu
           </NavLink>
         </li>
-        <li>
+        <li onClick={toggleNavItems}>
           <NavLink
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/restaurant-app/reservations"
+            to="/reservations"
           >
             Reservations
           </NavLink>
         </li>
-        <li>
+        <li onClick={toggleNavItems}>
           <Link
             target="_blank"
             className="nav-item"
@@ -60,12 +60,12 @@ function Nav() {
             Order online
           </Link>
         </li>
-        <li>
+        <li onClick={toggleNavItems}>
           <NavLink
             className={(navData) =>
               navData.isActive ? ' nav-item underline' : 'nav-item'
             }
-            to="/restaurant-app/login"
+            to="/login"
           >
             Login
           </NavLink>

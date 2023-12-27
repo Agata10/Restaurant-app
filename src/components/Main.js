@@ -20,7 +20,7 @@ function Main() {
   const submitForm = (formData) => {
     submitAPI(formData);
     if (submitAPI(formData)) {
-      navigate('/restaurant-app/reservations/confirmation');
+      navigate('/reservations/confirmation');
       localStorage.setItem('Reservation', JSON.stringify(formData));
     }
   };
@@ -28,13 +28,10 @@ function Main() {
   return (
     <main>
       <Routes>
-        <Route path="/restaurant-app/" element={<Homepage />}></Route>
+        <Route path="/" element={<Homepage />}></Route>
+        <Route path="/menu" element={<MenuLogin title={'Our Menu'} />}></Route>
         <Route
-          path="/restaurant-app/menu"
-          element={<MenuLogin title={'Our Menu'} />}
-        ></Route>
-        <Route
-          path="/restaurant-app/reservations"
+          path="/reservations"
           element={
             <BookingPage
               avaiableTimes={state}
@@ -44,13 +41,10 @@ function Main() {
           }
         ></Route>
         <Route
-          path="/restaurant-app/reservations/confirmation"
+          path="/reservations/confirmation"
           element={<ConfirmedBooking />}
         ></Route>
-        <Route
-          path="/restaurant-app/login"
-          element={<MenuLogin title={'Login'} />}
-        ></Route>
+        <Route path="/login" element={<MenuLogin title={'Login'} />}></Route>
       </Routes>
     </main>
   );
