@@ -48,7 +48,7 @@ function Main() {
           element={<ConfirmedBooking />}
         ></Route>
         <Route
-          path="/restaurant-app//login"
+          path="/restaurant-app/login"
           element={<MenuLogin title={'Login'} />}
         ></Route>
       </Routes>
