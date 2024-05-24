@@ -74,3 +74,6 @@ https://agata10.github.io/restaurant-app
 ## Usage
 
 The websites main task was creatig a booking page. Reserving a table has a form validation with useFormik.
+
+## License
+[License](LICENSE)
